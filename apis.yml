@@ -1,8 +1,24 @@
 aid: divide
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/divide.png
 name: Divide *
-description: 'Divide * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: enterprise. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Divide was a bring-your-own-device (BYOD) mobile management product, built by Enterproid,
+  that created a secure, separate work persona (dual-persona / work profile) on an employee''s personal
+  Android and iOS phone. Backed by GV (Google Ventures), the company was acquired by Google on May 19,
+  2014 and folded into the Android for Work / Android Enterprise program. The standalone Divide product
+  and any developer or API surface have been discontinued; divide.com now serves a Google-owned tombstone
+  page that redirects visitors to android.com/work. No independent API, developer portal, SDK, or
+  specification remains to enrich — this record is preserved as an acquired-company profile.'
 url: https://raw.githubusercontent.com/api-evangelist/divide/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,23 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Google
+x-acquired-date: '2014-05-19'
+x-enrichment-note: 'Verified defunct: divide.com serves a Google-owned tombstone page ("Divide is now
+  part of Google"), DNS/MX/cert are Google-owned, all /.well-known/ paths 301-redirect. No API surface
+  exists; only a real domain-security probe was captured.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Enterprise
+- Mobile
+- BYOD
+- Mobile Device Management
+- Security
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/divide-domain-security.yml
 - type: Website
   url: http://divide.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
