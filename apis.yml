@@ -32,7 +32,7 @@ x-acquired-date: '2014-05-19'
 x-enrichment-note: 'Verified defunct: divide.com serves a Google-owned tombstone page ("Divide is now
   part of Google"), DNS/MX/cert are Google-owned, all /.well-known/ paths 301-redirect. No API surface
   exists; only a real domain-security probe was captured.'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
